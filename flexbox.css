@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "FredokaOne";
+  src: url("Fredoka_One/FredokaOne-Regular.ttf") format("TrueType");
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FADDD9;
+}
+
+.crop {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 10px;
+        width: 400px;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .crop img {
+        width: 350px;
+        height: 220px;
+        margin: auto;
+    }
+
+.container {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  margin: 5vh;
+}
+
+.days {
+  display: flex;
+  flex-flow: row;
+  flex: 0.15;
+}
+
+.row01 {
+  display: flex;
+  flex-flow: row;
+  flex: 1;
+  border-top: 0px solid;
+}
+
+.row02 {
+  display: flex;
+  flex-flow: row;
+  flex: 1;
+}
+
+.row03 {
+  display: flex;
+  flex-flow: row;
+  flex: 1;
+}
+
+.row04 {
+  display: flex;
+  flex-flow: row;
+  flex: 1;
+}
+
+.row05 {
+  display: flex;
+  flex-flow: row;
+  flex: 1;
+}
+
+.box01 {
+  font-family: "FredokaOne";
+  color: gray;
+  border: 1px solid gray;
+  background-color: white;
+  flex: 1;
+  padding: 10px;
+}
+
+.box02 {
+  font-family: "FredokaOne";
+  color: gray;
+  border: 1px solid gray;
+  background-color: white;
+  flex: 1;
+  padding: 10px;
+}
+
+.daysbox {
+  font-family: "FredokaOne";
+    color: white;
+  flex: 1;
+  text-align: center;
+  background-color: #E95658;
+  padding: 6px;
+}
