@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Interview with King Koopa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="project2.css">
+  <style type="text/css">
+        body {
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+  <div id="canvas">
+    <div id="body1">An Interview With</div>
+    <div id="title"><img src="title.png" width=1150 height=260></a></div>
+    <div id="body2">(aka Bowser)</div>
+    <div class="container">
+      <a href="project2_questions.html"><img src="Bowserpainting.png" alt="Avatar" class="image"></a>
+      <a href="project2_questions.html"><div class="overlay"><img src="Bowserpainting.gif" width=100% height=100%></a></div>
+      </div>
+    <div id="body3">Interviewed by Julia Kindle<p><center>Click portrait to begin<center></div>
+    <div id="header1">Background and Early Life</div>
+    <div id="body4">Bowser, sometimes known as King Koopa or King Bowser, is a major character and the main antagonist of the Mario franchise. He is a large, powerful, fire-breathing Koopa who leads the Koopa Troop, an antagonistic organization of
+      turtle-like creatures, and has been the arch-nemesis of Mario since his debut in Super Mario Bros in 1985. He has repeatedly kidnapped or attempted to kidnap Princess Peach with the ultimate goal of defeating Mario and taking over the Mushroom
+      Kingdom.<br style="color:#E52927;">
+      <a href="https://www.mariowiki.com/Bowser">(via mariowiki)</a></br>
+    </div>
+    <div class="w3-content w3-section" style="max-width:300px">
+      <img class="mySlides" src="https://i.makeagif.com/media/4-02-2018/C0VNYh.gif" style="width:50%">
+      <img class="mySlides" src="http://www.digitiser2000.com/uploads/4/0/6/6/40667199/maxresdefault-23_orig.jpg" style="width:50%">
+      <img class="mySlides" src="https://i.ytimg.com/vi/QVcxZt92BBg/maxresdefault.jpg" style="width:50%">
+    </div>
+  </div>
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1
+      }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+  </script>
+
+</body>
+
+</html>
